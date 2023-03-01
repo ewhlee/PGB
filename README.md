@@ -64,3 +64,8 @@ For the number of clusters, we follow the number of classes used for the node cl
 | HAKE    | 48.71   | 50.85     | 10.73 | 10.11 |
 | GAHNE   | 50.44   | 53.37     | 13.86 | 13.52 |
 | ie-HGCN | 50.37   | 36.47     | 13.71 | 13.27 |
+
+The heterogeneous network embedding models (HAKE, GAHNE, and ie-HGCN) outperform the homogeneous network embedding models (LINE and GCN), illustrating that modeling the multiple node types and link types is beneficial.
+Both GAHNE and ie-HGCN have similar scores across all four metrics.
+The difference between LINE and GCN shows the importance of using the word information as GCN uses the TF-IDF weighted word vectors for the node feature on top of the citation network while LINE only uses the citation network.
+Unfortunately, a major limitation of existing heterogeneous network embedding models is the memory footprint.
